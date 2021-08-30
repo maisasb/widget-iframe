@@ -1,7 +1,7 @@
 <template>
   <div v-if="show">
     <div :class="mode === WIDGET_MODES.EMBEBED ? 'widget-embebed' : 'widget-fixed'" class="box" v-if="!minimized">
-      <div id="track__widget-close" class="icon-close">
+      <div class="icon-close">
         <Icon name="Close" color="#297ab5" class="cursor-pointer" :handleClick="() => minimizeWidget(true)" />
       </div>
       <Content />
